@@ -1,0 +1,291 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC0C1F68223FBB24004DA8B6 /* massagemEnfermeira.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0C1F67223FBB24004DA8B6 /* massagemEnfermeira.m */; };
+		AC53BBE9223681A200D0C1B6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC53BBE8223681A200D0C1B6 /* main.m */; };
+		AC53BBF1223681CA00D0C1B6 /* Enfermeira.m in Sources */ = {isa = PBXBuildFile; fileRef = AC53BBF0223681CA00D0C1B6 /* Enfermeira.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AC53BBE3223681A200D0C1B6 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AC0C1F66223FBB24004DA8B6 /* massagemEnfermeira.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = massagemEnfermeira.h; sourceTree = "<group>"; };
+		AC0C1F67223FBB24004DA8B6 /* massagemEnfermeira.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = massagemEnfermeira.m; sourceTree = "<group>"; };
+		AC53BBE5223681A200D0C1B6 /* Ex-Enfermeira */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Ex-Enfermeira"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC53BBE8223681A200D0C1B6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AC53BBEF223681CA00D0C1B6 /* Enfermeira.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Enfermeira.h; sourceTree = "<group>"; };
+		AC53BBF0223681CA00D0C1B6 /* Enfermeira.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Enfermeira.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC53BBE2223681A200D0C1B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC53BBDC223681A200D0C1B6 = {
+			isa = PBXGroup;
+			children = (
+				AC0C1F66223FBB24004DA8B6 /* massagemEnfermeira.h */,
+				AC0C1F67223FBB24004DA8B6 /* massagemEnfermeira.m */,
+				AC53BBEF223681CA00D0C1B6 /* Enfermeira.h */,
+				AC53BBF0223681CA00D0C1B6 /* Enfermeira.m */,
+				AC53BBE7223681A200D0C1B6 /* Ex-Enfermeira */,
+				AC53BBE6223681A200D0C1B6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC53BBE6223681A200D0C1B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC53BBE5223681A200D0C1B6 /* Ex-Enfermeira */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC53BBE7223681A200D0C1B6 /* Ex-Enfermeira */ = {
+			isa = PBXGroup;
+			children = (
+				AC53BBE8223681A200D0C1B6 /* main.m */,
+			);
+			path = "Ex-Enfermeira";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC53BBE4223681A200D0C1B6 /* Ex-Enfermeira */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC53BBEC223681A200D0C1B6 /* Build configuration list for PBXNativeTarget "Ex-Enfermeira" */;
+			buildPhases = (
+				AC53BBE1223681A200D0C1B6 /* Sources */,
+				AC53BBE2223681A200D0C1B6 /* Frameworks */,
+				AC53BBE3223681A200D0C1B6 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ex-Enfermeira";
+			productName = "Ex-Enfermeira";
+			productReference = AC53BBE5223681A200D0C1B6 /* Ex-Enfermeira */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC53BBDD223681A200D0C1B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Paulera;
+				TargetAttributes = {
+					AC53BBE4223681A200D0C1B6 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = AC53BBE0223681A200D0C1B6 /* Build configuration list for PBXProject "Ex-Enfermeira" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AC53BBDC223681A200D0C1B6;
+			productRefGroup = AC53BBE6223681A200D0C1B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC53BBE4223681A200D0C1B6 /* Ex-Enfermeira */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC53BBE1223681A200D0C1B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC53BBE9223681A200D0C1B6 /* main.m in Sources */,
+				AC0C1F68223FBB24004DA8B6 /* massagemEnfermeira.m in Sources */,
+				AC53BBF1223681CA00D0C1B6 /* Enfermeira.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AC53BBEA223681A200D0C1B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AC53BBEB223681A200D0C1B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AC53BBED223681A200D0C1B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AC53BBEE223681A200D0C1B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC53BBE0223681A200D0C1B6 /* Build configuration list for PBXProject "Ex-Enfermeira" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC53BBEA223681A200D0C1B6 /* Debug */,
+				AC53BBEB223681A200D0C1B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC53BBEC223681A200D0C1B6 /* Build configuration list for PBXNativeTarget "Ex-Enfermeira" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC53BBED223681A200D0C1B6 /* Debug */,
+				AC53BBEE223681A200D0C1B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC53BBDD223681A200D0C1B6 /* Project object */;
+}
