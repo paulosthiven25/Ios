@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC699CD62277154400A36F75 /* TelaPrincipalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC699CD52277154300A36F75 /* TelaPrincipalViewController.swift */; };
+		AC699CD82277183700A36F75 /* TelaVermelhaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC699CD72277183700A36F75 /* TelaVermelhaViewController.swift */; };
 		ACEBBE23226DDF4000731978 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEBBE22226DDF4000731978 /* AppDelegate.swift */; };
 		ACEBBE25226DDF4000731978 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEBBE24226DDF4000731978 /* ViewController.swift */; };
 		ACEBBE28226DDF4000731978 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACEBBE26226DDF4000731978 /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC699CD52277154300A36F75 /* TelaPrincipalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaPrincipalViewController.swift; sourceTree = "<group>"; };
+		AC699CD72277183700A36F75 /* TelaVermelhaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaVermelhaViewController.swift; sourceTree = "<group>"; };
 		ACEBBE1F226DDF4000731978 /* Navegando entre Telas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Navegando entre Telas.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACEBBE22226DDF4000731978 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACEBBE24226DDF4000731978 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 				ACEBBE22226DDF4000731978 /* AppDelegate.swift */,
 				ACEBBE24226DDF4000731978 /* ViewController.swift */,
 				ACEBBE26226DDF4000731978 /* Main.storyboard */,
+				AC699CD72277183700A36F75 /* TelaVermelhaViewController.swift */,
+				AC699CD52277154300A36F75 /* TelaPrincipalViewController.swift */,
 				ACEBBE34226DEC4D00731978 /* TelaXViewController.swift */,
 				ACEBBE29226DDF4A00731978 /* Assets.xcassets */,
 				ACEBBE2B226DDF4A00731978 /* LaunchScreen.storyboard */,
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACEBBE35226DEC4D00731978 /* TelaXViewController.swift in Sources */,
+				AC699CD82277183700A36F75 /* TelaVermelhaViewController.swift in Sources */,
+				AC699CD62277154400A36F75 /* TelaPrincipalViewController.swift in Sources */,
 				ACEBBE25226DDF4000731978 /* ViewController.swift in Sources */,
 				ACEBBE23226DDF4000731978 /* AppDelegate.swift in Sources */,
 			);
@@ -288,6 +296,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Navegando entre Telas/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +314,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Navegando entre Telas/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

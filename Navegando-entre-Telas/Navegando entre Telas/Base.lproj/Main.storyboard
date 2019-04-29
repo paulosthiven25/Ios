@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sdG-wU-M6f">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sdG-wU-M6f">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -85,15 +84,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TFf-kT-dee">
-                                <rect key="frame" x="151" y="181" width="72" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Tela Verde"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbh-vT-ibx">
                                 <rect key="frame" x="139" y="294" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Tela Vermelha"/>
+                                <connections>
+                                    <action selector="btnVermelho:" destination="juI-KI-ekU" eventType="touchUpInside" id="f8i-h5-naK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TFf-kT-dee">
+                                <rect key="frame" x="133" y="175" width="72" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Tela Verde"/>
+                                <connections>
+                                    <action selector="btnVerde:" destination="juI-KI-ekU" eventType="touchUpInside" id="C27-fh-Tkq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -121,6 +126,9 @@
                                 <rect key="frame" x="59" y="94" width="222" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Voltar direto para a tela principal"/>
+                                <connections>
+                                    <segue destination="G3a-CW-Mf4" kind="unwind" unwindAction="resetarNavegacaoWithSender:" id="MzW-ah-NvA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.13164627607745338" green="1" blue="0.12417991014024643" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -128,13 +136,14 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SiL-Z8-dUP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="G3a-CW-Mf4" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2286" y="-1290"/>
         </scene>
-        <!--View Controller-->
+        <!--Tela Vermelha View Controller-->
         <scene sceneID="DgZ-jT-wB7">
             <objects>
-                <viewController id="5EH-sN-3Yt" sceneMemberID="viewController">
+                <viewController id="5EH-sN-3Yt" customClass="TelaVermelhaViewController" customModule="Navegando_entre_Telas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HWu-JZ-6oQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -150,6 +159,9 @@
                         <color key="backgroundColor" red="1" green="0.17548366139237759" blue="0.075071662712477782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="wsA-ca-gzl"/>
                     </view>
+                    <connections>
+                        <outlet property="meuLabel" destination="Qpu-X6-r5m" id="uIZ-0F-rkf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wal-TJ-p0u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -173,7 +185,7 @@
         <!--Tela Principal-->
         <scene sceneID="6YZ-eh-N4G">
             <objects>
-                <viewController id="LDw-Ib-5Qh" sceneMemberID="viewController">
+                <viewController id="LDw-Ib-5Qh" customClass="TelaPrincipalViewController" customModule="Navegando_entre_Telas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="062-Pw-llr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
