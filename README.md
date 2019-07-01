@@ -1,2 +1,2 @@
 # Ios
--Repositório referente ao exercicios feitos da matéria de IOS na Faculdade FIAP(2019) 
+-Repositório referente ao exercicios feitos da matéria de IOS na Faculdade(2019) 
