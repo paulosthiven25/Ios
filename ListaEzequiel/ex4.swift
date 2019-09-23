@@ -1,20 +1,21 @@
 import Foundation
 //4
- func addFrenteTras(palavra : String,palavraAdd : String) -> String{
+func addFrenteTras(palavra : String) -> String{
     
-     var word = palavra
-     if(word.isEmpty){
-         return "Palavra vazia.Passe uma palavra válida";
-     }
+    var word = palavra
+    if(word.isEmpty){
+        return "Palavra vazia.Passe uma palavra válida";
+    }
+var ex = word.last
+    word.insert(contentsOf:String(ex!),at: word.startIndex)
+    word.insert(contentsOf:String(ex!),at: word.endIndex)
+    
+    return word
+    
+}
 
-      word.insert(contentsOf: palavraAdd,at: word.startIndex)
-      word.insert(contentsOf: palavraAdd,at: word.endIndex)
+print(addFrenteTras(palavra :"pao"))
 
-     return word
-     
- }
-
- print(addFrenteTras(palavra :"pao",palavraAdd : "a"))
 
 
 
