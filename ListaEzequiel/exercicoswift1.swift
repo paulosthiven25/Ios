@@ -21,3 +21,27 @@ func calcularArray(array1:[Int],array2:[Int] ) {
 
 
 }
+
+
+import Foundation
+
+let jsonProduto =
+"""
+{
+"preco": 22.50,
+"tipo" : "B",
+"categoria" : ["alimentos","pereciveis","cereais"]
+}
+"""
+
+struct Produto : Codable {
+    var preco : Double
+    var tipo : String
+    var categoria : [String]
+    
+}
+
+let jsonDataProduto = jsonProduto.data(using: .utf8)!
+let Produto1 = try! JSONDecoder().decode(Produto.self,from: jsonDataProduto)
+
+print(Produto1.categoria.first)
